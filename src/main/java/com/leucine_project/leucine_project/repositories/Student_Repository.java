@@ -22,4 +22,9 @@ public class Student_Repository {
 		return null;
 	}
 
+	public List<StudentProfile> findallstudents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

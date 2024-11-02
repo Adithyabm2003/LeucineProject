@@ -38,4 +38,11 @@ public class Student_Controller {
 		 return student_repository.findfaculties(id);
 	 }
 	 
+	 
+	 //to get all the students data
+	 @GetMapping(value="/get_all_students",produces="application/json")
+	 public List<StudentProfile> getallstudents(){
+		 return student_repository.findallstudents();
+	 }
+	 
 }
