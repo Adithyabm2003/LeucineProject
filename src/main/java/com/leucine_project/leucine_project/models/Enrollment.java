@@ -18,4 +18,3 @@ public class Enrollment {
 
     // Getters and setters
 }
-

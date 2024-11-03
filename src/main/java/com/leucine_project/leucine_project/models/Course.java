@@ -26,5 +26,5 @@ public class Course {
     private Set<Enrollment> enrollments;
 
     // Getters and setters
+    // Include all getters and setters here
 }
-

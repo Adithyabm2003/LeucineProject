@@ -1,7 +1,5 @@
 package com.leucine_project.leucine_project.models;
 
-
-
 import jakarta.persistence.*;
 import java.util.Set;
 
@@ -26,10 +24,52 @@ public class FacultyProfile {
     @OneToMany(mappedBy = "faculty", cascade = CascadeType.ALL)
     private Set<Course> courses;
 
-	public Long getUserId() {
-		// TODO Auto-generated method stub
-		return userId;
-	}
-
     // Getters and setters
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public String getOfficeHours() {
+        return officeHours;
+    }
+
+    public void setOfficeHours(String officeHours) {
+        this.officeHours = officeHours;
+    }
+
+    public Set<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(Set<Course> courses) {
+        this.courses = courses;
+    }
 }
