@@ -26,5 +26,10 @@ public class FacultyProfile {
     @OneToMany(mappedBy = "faculty", cascade = CascadeType.ALL)
     private Set<Course> courses;
 
+	public Long getUserId() {
+		// TODO Auto-generated method stub
+		return userId;
+	}
+
     // Getters and setters
 }
